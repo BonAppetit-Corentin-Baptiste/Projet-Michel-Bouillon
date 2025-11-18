@@ -1,0 +1,6 @@
+organiser le projet sur notion en utiilisant un bordview
+quand c'est dans done (c'est sur GitHub)
+faire une branche par personne puis tous mettre sur main
+maquette
+formulaire si on mais un truc de validation en js 
+

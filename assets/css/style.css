@@ -1,0 +1,16 @@
+/* reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: white;
+}
+
+
+#introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

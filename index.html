@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Définition du jeu de caractères -->
+  <meta charset="UTF-8" />
+
+  <!-- Adaptation à la taille de l’écran -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Titre affiché dans l’onglet du navigateur -->
+  <title>on Appétit </title>
+
+  <!-- Lien vers la feuille de style -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Description SEO -->
+  <meta name="description" content="Description du site" />
+</head>
+
+<body>
+  <!-- En-tête du site -->
+  <header>
+    <div>
+      <img src="./assets/img/" alt="" srcset="">
+      <nav>
+        <ul>
+          <li><a href="#introduction">L'univers</a></li>
+          <li>
+            <a href="#trilogie">Synopsis</a>
+            <ul>
+              <li><a href="#EpisodeIV">Episode IV</a></li>
+              <li><a href="#EpisodeV">Episode V</a></li>
+              <li><a href="#EpisodeVI">Episode VI</a></li>
+            </ul>
+          </li>
+          <li><a href="#ficheTechnique">Fiche technique</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <img src="./assets/img/food_6_dark.jpg">
+  </header>
+
+  <!-- Contenu principal -->
+  <main id="accueil">
+    <section id="introduction">
+      <h2>Notre chef</h2>
+      <img src="./assets/img/chef_dark.jpg" alt="">
+      <p>Bienvenue dans mon restaurant
+Bon Appétit. 
+
+Depuis toujours, je suis passionné par la cuisine authentique, celle qui met en avant les produits frais, locaux et de saison. Ici, chaque plat est imaginé pour raconter une histoire : celle du terroir, du partage et du goût vrai. 
+
+Mon objectif est simple : offrir une cuisine généreuse, moderne et pleine de saveurs, dans une ambiance conviviale où chacun se sent chez lui. Merci de votre confiance, et très bonne dégustation.</p>
+        <img src="./assets/img/signature-noir.png" alt="">
+    </section>
+
+    <section id="trilogie">
+      <h2>Présentation des sections</h2>
+      <section id="EpisodeIV">
+        <h3>Section 1</h3>
+        <p>Texte descriptif.</p>
+      </section>
+      <section id="EpisodeV">
+        <h3>Section 2</h3>
+        <p>Texte descriptif.</p>
+      </section>
+      <section id="EpisodeVI">
+        <h3>Section 3</h3>
+        <p>Texte descriptif.</p>
+      </section>
+    </section>
+
+
+    <!-- Formulaire de contact complet -->
+    <section id="Contact">
+      <h2>Contactez-nous</h2>
+      <form method="post" action="">
+        <fieldset>
+          <legend>Votre message</legend>
+
+          <label for="nom">Votre nom *</label>
+          <input type="text" id="nom" name="nom" required />
+          <br>
+
+          <label for="genre">Vous êtes... *</label>
+          <input type="radio" id="garcon" name="genre" value="garcon" required />
+          <label for="garcon">Un garçon</label>
+          <input type="radio" id="fille" name="genre" value="fille" required />
+          <label for="fille">Une fille</label>
+          <br>
+
+          <div>
+            <label>Vos films préférés :</label><br>
+            <input type="checkbox" id="Episode4" name="films" value="episode4" />
+            <label for="Episode4">Épisode IV : Un nouvel espoir</label><br>
+
+            <input type="checkbox" id="Episode5" name="films" value="episode5" />
+            <label for="Episode5">Épisode V : L’Empire contre-attaque</label><br>
+
+            <input type="checkbox" id="Episode6" name="films" value="episode6" />
+            <label for="Episode6">Épisode VI : Le retour du Jedi</label>
+          </div>
+
+          <label for="personnage">Si vous étiez un personnage :</label>
+          <select id="personnage" name="personnage">
+            <option disabled selected>-- Choisissez un personnage --</option>
+            <option value="luke">Luke Skywalker</option>
+            <option value="leia">Leïa Organa</option>
+            <option value="han">Han Solo</option>
+            <option value="yoda">Yoda</option>
+            <option value="vader">Darth Vader</option>
+          </select>
+          <br>
+
+          <label for="message">Votre message *</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Envoyer</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>Footer</p>
+  </footer>
+</body>
+</html>
