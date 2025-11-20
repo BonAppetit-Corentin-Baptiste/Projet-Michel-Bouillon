@@ -1,130 +1,386 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <!-- Définition du jeu de caractères -->
-  <meta charset="UTF-8" />
+  <head>
+    <!-- Définition du jeu de caractères -->
+    <meta charset="UTF-8" />
 
-  <!-- Adaptation à la taille de l’écran -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Adaptation à la taille de l’écran -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Titre affiché dans l’onglet du navigateur -->
-  <title>on Appétit </title>
+    <!-- Titre affiché dans l’onglet du navigateur -->
+    <title>Bon Appétit</title>
 
-  <!-- Lien vers la feuille de style -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-  
-  <!-- Description SEO -->
-  <meta name="description" content="Description du site" />
-</head>
+    <!-- Lien vers la feuille de style et js -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="./assets/JS/script.js" defer></script>
 
-<body>
-  <!-- En-tête du site -->
-  <header>
-    <div>
-      <img src="./assets/img/" alt="" srcset="">
-      <nav>
-        <ul>
-          <li><a href="#introduction">L'univers</a></li>
-          <li>
-            <a href="#trilogie">Synopsis</a>
-            <ul>
-              <li><a href="#EpisodeIV">Episode IV</a></li>
-              <li><a href="#EpisodeV">Episode V</a></li>
-              <li><a href="#EpisodeVI">Episode VI</a></li>
-            </ul>
-          </li>
-          <li><a href="#ficheTechnique">Fiche technique</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
+    <!-- Description SEO -->
+    <meta
+      name="description"
+      content="Bon Appétit – Restaurant moderne et chaleureux. Découvrez notre carte, réservez votre table en ligne et explorez les créations du chef Michel Bouillon."
+    />
+  </head>
+
+  <body>
+    <!-- En-tête du site -->
+    <header>
+      <nav class="navbar">
+        <img src="./assets/img/Logo.png" class="img-logo" alt="logo" />
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="#horaires">Les Horaires</a></li>
+            <li><a href="#plat">Nos créations</a></li>
+            <li><a href="#contact">Réserver</a></li>
+          </ul>
+        </div>
+
+        <img
+          src="./assets/img/menu-burger.png"
+          class="menu-hamburger"
+          alt="menu"
+        />
       </nav>
-    </div>
-    <img src="./assets/img/food_6_dark.jpg">
-  </header>
 
-  <!-- Contenu principal -->
-  <main id="accueil">
-    <section id="introduction">
-      <h2>Notre chef</h2>
-      <img src="./assets/img/chef_dark.jpg" alt="">
-      <p>Bienvenue dans mon restaurant
-Bon Appétit. 
+      <img src="./assets/img/food_6_dark.jpg" alt="" class="img-header" />
+    </header>
 
-Depuis toujours, je suis passionné par la cuisine authentique, celle qui met en avant les produits frais, locaux et de saison. Ici, chaque plat est imaginé pour raconter une histoire : celle du terroir, du partage et du goût vrai. 
-
-Mon objectif est simple : offrir une cuisine généreuse, moderne et pleine de saveurs, dans une ambiance conviviale où chacun se sent chez lui. Merci de votre confiance, et très bonne dégustation.</p>
-        <img src="./assets/img/signature-noir.png" alt="">
-    </section>
-
-    <section id="trilogie">
-      <h2>Présentation des sections</h2>
-      <section id="EpisodeIV">
-        <h3>Section 1</h3>
-        <p>Texte descriptif.</p>
-      </section>
-      <section id="EpisodeV">
-        <h3>Section 2</h3>
-        <p>Texte descriptif.</p>
-      </section>
-      <section id="EpisodeVI">
-        <h3>Section 3</h3>
-        <p>Texte descriptif.</p>
-      </section>
-    </section>
-
-
-    <!-- Formulaire de contact complet -->
-    <section id="Contact">
-      <h2>Contactez-nous</h2>
-      <form method="post" action="">
-        <fieldset>
-          <legend>Votre message</legend>
-
-          <label for="nom">Votre nom *</label>
-          <input type="text" id="nom" name="nom" required />
-          <br>
-
-          <label for="genre">Vous êtes... *</label>
-          <input type="radio" id="garcon" name="genre" value="garcon" required />
-          <label for="garcon">Un garçon</label>
-          <input type="radio" id="fille" name="genre" value="fille" required />
-          <label for="fille">Une fille</label>
-          <br>
-
+    <!-- Contenu principal -->
+    <main>
+      <section id="description">
+        <h2>Notre chef</h2>
+        <div class="information">
+          <img src="./assets/img/chef_dark.jpg" alt="chef" />
           <div>
-            <label>Vos films préférés :</label><br>
-            <input type="checkbox" id="Episode4" name="films" value="episode4" />
-            <label for="Episode4">Épisode IV : Un nouvel espoir</label><br>
-
-            <input type="checkbox" id="Episode5" name="films" value="episode5" />
-            <label for="Episode5">Épisode V : L’Empire contre-attaque</label><br>
-
-            <input type="checkbox" id="Episode6" name="films" value="episode6" />
-            <label for="Episode6">Épisode VI : Le retour du Jedi</label>
+            <p>Bienvenue dans mon restaurant Bon Appétit.</p>
+            <p>
+              Depuis toujours, je suis passionné par la cuisine authentique,
+              celle qui met en avant les produits frais, locaux et de saison.
+              Ici, chaque plat est imaginé pour raconter une histoire : celle du
+              terroir, du partage et du goût vrai. Mon objectif est simple :
+              offrir une cuisine généreuse, moderne et pleine de saveurs, dans
+              une ambiance conviviale où chacun se sent chez lui.
+            </p>
+            <p>Merci de votre confiance, et très bonne dégustation.</p>
+            <img
+              src="./assets/img/signature-noir.png"
+              class="img-signature"
+              alt="signature"
+            />
           </div>
+        </div>
+      </section>
 
-          <label for="personnage">Si vous étiez un personnage :</label>
-          <select id="personnage" name="personnage">
-            <option disabled selected>-- Choisissez un personnage --</option>
-            <option value="luke">Luke Skywalker</option>
-            <option value="leia">Leïa Organa</option>
-            <option value="han">Han Solo</option>
-            <option value="yoda">Yoda</option>
-            <option value="vader">Darth Vader</option>
-          </select>
-          <br>
+      <section id="horaires">
+        <div class="container">
+          <div class="text-overlay">
+            <p>HEURES D’OUVERTURE</p>
+            <p>Du lundi au samedi</p>
+            <p>12h30 - 14h30</p>
+            <p>19h - 22h</p>
+            <p>Dimanche : Fermé</p>
+          </div>
+        </div>
+      </section>
 
-          <label for="message">Votre message *</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+      <section class="section-plats" id="plat">
+        <h2>Nos créations</h2>
+        <article class="plat">
+          <div class="description-plat">
+            <h2>Élégance Marine en Sauce Crémée</h2>
+            <p>
+              un plat raffiné où de succulentes crevettes et un médaillon de
+              poisson sont nappés d'une sauce onctueuse et crémeuse. L'ensemble
+              est délicatement rehaussé de tomates cerises et d'une touche de
+              basilic poupre.
+            </p>
+          </div>
+          <img
+            src="assets/img/food_5_dark.jpg"
+            alt="plat de crevette en sauce "
+            class="photo-plat"
+          />
+        </article>
 
-          <button type="submit">Envoyer</button>
-        </fieldset>
-      </form>
-    </section>
-  </main>
+        <article class="plat">
+          <div class="description-plat">
+            <h2>Délicatesse Printanière</h2>
+            <p>
+              Ces gnocchis sont sublimées par une sauce légère, parsemée
+              d'amandes effilées croustillantes et de feuilles de roquette
+              fraîche. Accompagné de notes de menthe et de citron, c'est un plat
+              vif et rafraîchissant
+            </p>
+          </div>
+          <img
+            src="assets/img/food_11_dark.jpg"
+            alt="gnocchis"
+            class="photo-plat"
+          />
+        </article>
 
-  <!-- Pied de page -->
-  <footer>
-    <p>Footer</p>
-  </footer>
-</body>
+        <article class="plat">
+          <div class="description-plat">
+            <h2>Thon Ahi Saisi au Sel de Mer</h2>
+            <p>
+              Une tranche de thon de qualité, parfaitement saisie à l'exterieur
+              et crue à l'intérieur, assaisonée d'une généreuse pincée de gros
+              sel. Servi avec de jeunes pousses croquantes, une rondelles de
+              citron vert, et une sauce piquante pour relever le tout.
+            </p>
+          </div>
+          <img
+            src="assets/img/food_10_dark.jpg"
+            alt="Tranche de thon"
+            class="photo-plat"
+          />
+        </article>
+
+        <article class="plat">
+          <div class="description-plat">
+            <h2>Steak & Oeuf, Cuisine de Caractère</h2>
+            <p>
+              Un pavé de boeuf grillé et juteux, servi avec un oeuf poché dont
+              le jaune coulant vient enrichir la sauce. Accompagné d'une fraîche
+              concassée de tomates et d'un brin de romarin pour une expérience
+              savoureuse et rustique.
+            </p>
+          </div>
+          <img
+            src="assets/img/food_7_dark.jpg"
+            alt="steak et oeuf poché "
+            class="photo-plat"
+          />
+        </article>
+      </section>
+
+      <section>
+        <h2>Vos retours</h2>
+        <ul class="carousel">
+          <li class="carousel-item">
+            <div>
+              <h3>Nom Prénom</h3>
+              <img
+                src="./assets/img/etoiles-avis.png"
+                class="img-stars"
+                alt="5 étoiles"
+              />
+            </div>
+            <p>
+              Un vrai coup de cœur ! Les plats sont délicieux, raffinés et
+              généreux. L’accueil est chaleureux et le service impeccable.
+            </p>
+          </li>
+
+          <li class="carousel-item">
+            <div>
+              <h3>Nom Prénom</h3>
+              <img
+                src="./assets/img/etoiles-avis.png"
+                class="img-stars"
+                alt="5 étoiles"
+              />
+            </div>
+            <p>
+              Un vrai coup de cœur ! Les plats sont délicieux, raffinés et
+              généreux. L’accueil est chaleureux et le service impeccable.
+            </p>
+          </li>
+
+          <li class="carousel-item">
+            <div>
+              <h3>Nom Prénom</h3>
+              <img
+                src="./assets/img/etoiles-avis.png"
+                class="img-stars"
+                alt="5 étoiles"
+              />
+            </div>
+            <p>
+              Un vrai coup de cœur ! Les plats sont délicieux, raffinés et
+              généreux. L’accueil est chaleureux et le service impeccable.
+            </p>
+          </li>
+
+          <li class="carousel-item">
+            <div>
+              <h3>Nom Prénom</h3>
+              <img
+                src="./assets/img/etoiles-avis.png"
+                class="img-stars"
+                alt="5 étoiles"
+              />
+            </div>
+            <p>
+              Un vrai coup de cœur ! Les plats sont délicieux, raffinés et
+              généreux. L’accueil est chaleureux et le service impeccable.
+            </p>
+          </li>
+
+          <li class="carousel-item">
+            <div>
+              <h3>Nom Prénom</h3>
+              <img
+                src="./assets/img/etoiles-avis.png"
+                class="img-stars"
+                alt="5 étoiles"
+              />
+            </div>
+            <p>
+              Un vrai coup de cœur ! Les plats sont délicieux, raffinés et
+              généreux. L’accueil est chaleureux et le service impeccable.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Formulaire de réservation -->
+      <h2>Réservez votre table</h2>
+      <section id="contact">
+        <div class="container-form">
+          <form action="#" method="POST" id="formReserv">
+            <div class="form-item">
+              <label for="first-name">Nom</label>
+              <input
+                type="text"
+                id="first-name"
+                placeholder="Ex : Dupont"
+                required
+              />
+            </div>
+
+            <div class="form-item">
+              <label for="last-name">Prénom</label>
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Ex : Jacque"
+                required
+              />
+            </div>
+
+            <div class="form-item">
+              <label for="telephone">Téléphone</label>
+              <input
+                type="tel"
+                id="telephone"
+                placeholder="Ex : 04 56 37 18 32"
+                required
+              />
+            </div>
+
+            <div class="form-item">
+              <label for="horaire">Choisissez un horaire :</label>
+              <select id="horaire" name="horaire" required>
+                <option value="">Sélectionnez un horaire</option>
+                <option value="12:30">12h30</option>
+                <option value="13:00">13h00</option>
+                <option value="13:30">13h30</option>
+                <option value="14:00">14h00</option>
+                <option value="14:30">14h30</option>
+                <option value="19:00">19h00</option>
+                <option value="19:30">19h30</option>
+                <option value="20:00">20h00</option>
+                <option value="20:30">20h30</option>
+                <option value="21:00">21h00</option>
+                <option value="21:30">21h30</option>
+                <option value="22:00">22h00</option>
+              </select>
+            </div>
+
+            <div class="form-item">
+              <label for="personnes">Nombre de personnes :</label>
+              <select id="personnes" name="personnes" required>
+                <option value="">Choisissez</option>
+                <option value="1">1 personne</option>
+                <option value="2">2 personnes</option>
+                <option value="3">3 personnes</option>
+                <option value="4">4 personnes</option>
+                <option value="5">5 personnes</option>
+                <option value="6">6 personnes (max)</option>
+              </select>
+            </div>
+
+            <button type="submit">Réserver</button>
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <h2>Nous trouver</h2>
+        <div class="carte">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86965.55614679729!2d2.1942809252918978!3d49.89109559573687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e7857c0e87f5fb%3A0x37fb21b742d12b66!2sLa%20Manu%20-%20Campus%20Amiens!5e1!3m2!1sfr!2sfr!4v1763547514471!5m2!1sfr!2sfr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li><p>Bon Appetit</p></li>
+            <li><p>Restaurant de Michel Bouillon</p></li>
+            <li><a href="#">12 rue de la Gastronomie, 80090 Amiens</a></li>
+            <li><a href="#">06 03 46 56 43</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Horaire d'ouverture</h3>
+          <ul>
+            <li><p>Du Lundi au Samedi</p></li>
+            <li><p>Midi : 12h30-14h30</p></li>
+            <li><p>Soir : 19h-22h</p></li>
+            <li><p>Dimanche : Fermé</p></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>A propos</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.google.com/maps/place/La+Manu+-+Campus+Amiens/@49.8910956,2.1942809,19971m/data=!3m2!1e3!5s0x47e7844a37c68a6d:0x41bd48b9ebd3789!4m10!1m2!2m1!1sla+manu!3m6!1s0x47e7857c0e87f5fb:0x37fb21b742d12b66!8m2!3d49.8911659!4d2.311068!15sCgdsYSBtYW51WgkiB2xhIG1hbnWSAQdjb2xsZWdlqgFLCg0vZy8xMWZwdHl6cjU5EAEqCyIHbGEgbWFudSgEMh4QASIakgty3D5M4ME2Ra8CFa2sdAmUt3KueqTRaB0yCxACIgdsYSBtYW514AEA!16s%2Fg%2F11fptyzr59?entry=ttu&g_ep=EgoyMDI1MTExNi4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                >Google Maps</a
+              >
+            </li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Tiktok</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="ligne-footer" />
+
+      <div class="paiement-bar">
+        <p class="paiement-titre">Moyen de paiement</p>
+        <div class="icone-paiement">
+          <i class="ri-money-euro-box-line"></i>
+          <i class="ri-mastercard-fill"></i>
+          <i class="ri-paypal-fill"></i>
+          <i class="ri-visa-line"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
