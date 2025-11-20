@@ -139,9 +139,10 @@ header .img-header {
   text-shadow: 0 0 10px black;
 }
 
-.text-overlay {
+#horaires p {
   font-size: 30px;
   text-align: center;
+  font-weight: bold;
 }
 
 /* plats */
@@ -174,40 +175,70 @@ header .img-header {
   flex-direction: column;
 }
 
-/* carousel */
+/* CAROUSEL */
 .carousel {
   width: 100%;
-  height: 300px;
   padding: 20px;
   display: flex;
-  gap: 2.5vw;
+  gap: 20px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   background: white;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .carousel-item {
   list-style: none;
   background-color: white;
   border: 1px solid #dddddd;
-  border-radius: 4px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.295);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   padding: 20px;
-  flex: 0 0 100%;
+  flex: 0 0 80%;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
-.carousel-item div {
+.carousel-item p {
+  font-size: 1rem;
+}
+
+.name-picture-stars {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.name-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stars-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.img-avis {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .img-stars {
-  width: 40%;
+  width: 100px;
+  height: auto;
 }
 
 /* formulaire */
@@ -379,6 +410,11 @@ button:hover {
     width: 40%;
   }
 
+  /* horaire */
+  .text-overlay {
+    font-size: 40px;
+  }
+
   /* plat */
   .plat {
     display: flex;
@@ -418,9 +454,8 @@ button:hover {
     flex: 0 0 calc(33.33% - 4vw);
   }
 
-  /* horaire */
-  .text-overlay {
-    font-size: 40px;
+  .carousel {
+    justify-content: center;
   }
 
   /* formulaire */
@@ -440,5 +475,4 @@ button:hover {
     justify-content: center;
     gap: 10%;
   }
-
 }
