@@ -39,3 +39,5 @@ Footer : Coordonnées et informations de contact.
 Workflow : Collaboration impérative via Git.
 
 Contenus : Utilisation des photos fournies par le client et rédaction des contenus textuels par l'intégrateur.
+
+[Bon appetit](https://bonappetit-corentin-baptiste.github.io/Projet-Michel-Bouillon/)
