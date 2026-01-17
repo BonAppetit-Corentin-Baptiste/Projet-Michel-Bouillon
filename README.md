@@ -4,7 +4,7 @@
 
 Ce projet consiste en la création d'un site vitrine moderne et attractif pour le restaurant "Bon Appétit", dirigé par Monsieur Michel Bouillon. L'objectif est de digitaliser l'établissement pour permettre aux clients de découvrir la carte et de réserver en ligne.
 
-## 🚀 Fonctionnalités
+## Fonctionnalités
 
 Format One Page : Navigation fluide sur une seule page pour un accès rapide à l'information.
 
@@ -16,7 +16,7 @@ Preuve Sociale : Section dédiée aux trois derniers témoignages clients pour r
 
 Informations Pratiques : Pied de page regroupant les horaires, l'adresse, les contacts réseaux sociaux et les mentions légales.
 
-## 🛠️ Stack Technique
+## Stack Technique
 
 Langages : HTML5 / CSS3.
 
@@ -24,7 +24,7 @@ Gestion de version : Workflow Git / GitHub.
 
 Déploiement : GitHub Pages.
 
-## 📂 Structure du Code
+## Structure du Code
 
 Conformément aux spécifications:
 
@@ -34,7 +34,7 @@ Main Content : Sections Carte, Galerie, Réservation et Témoignages.
 
 Footer : Coordonnées et informations de contact.
 
-## 📊 Aperçu des Tests
+## Aperçu des Tests
 
 Workflow : Collaboration impérative via Git.
 
