@@ -39,5 +39,6 @@ Footer : Coordonnées et informations de contact.
 Workflow : Collaboration impérative via Git.
 
 Contenus : Utilisation des photos fournies par le client et rédaction des contenus textuels par l'intégrateur.
+[La maquette](https://www.figma.com/design/gIxvUV0eMYEuSZI8FndoiK/Bon-App%C3%A9tit?node-id=0-1&t=6mEQGsu83lTkdx49-1)
 
 [Bon appetit](https://bonappetit-corentin-baptiste.github.io/Projet-Michel-Bouillon/)
