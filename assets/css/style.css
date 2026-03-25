@@ -55,22 +55,25 @@ img {
 .nav-links {
   display: flex;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(255, 255, 255, 0.432);
-  backdrop-filter: blur(6px);
-  transform: translateX(100%);
+  top: 15%;
+  left: 15%;
+  width: 70vw;
+  height: 30vh;
+  background: white;
+  transform: translateX(150%);
+  visibility: hidden;
   flex-direction: column;
   justify-content: center;
+  border-radius: 8px;
   align-items: center;
   z-index: 1000;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .nav-links.open {
   transform: translateX(0%);
+  visibility: visible;
 }
 
 .navbar.open {
@@ -88,6 +91,24 @@ img {
   color: black;
   font-size: 1.4rem;
   font-weight: bolder;
+}
+.nav-links a:hover {
+  color: #583c2b;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+  z-index: 50;
+  pointer-events: none;
+}
+.overlay.active {
+  display: block;
+  z-index: 0;
 }
 
 /* header */
@@ -318,6 +339,7 @@ button:hover {
 
 /* carte google */
 .carte iframe {
+  display: block;
   width: 100%;
   height: 500px;
   border: none;
@@ -347,7 +369,8 @@ button:hover {
   list-style: none;
   color: inherit;
 }
-.footer-column h3, .footer-column p{
+.footer-column h3,
+.footer-column p {
   padding-bottom: 0.3rem;
 }
 .paiement-bar {
@@ -367,14 +390,15 @@ button:hover {
   .menu-hamburger {
     display: none;
   }
-
   .nav-links {
-    display: block;
+    visibility: visible;
     transform: none;
     position: static;
+    align-items: end;
+    background-color: rgba(255, 255, 255, 0);
     height: auto;
     background: none;
-    backdrop-filter: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0);
   }
 
   .nav-links ul {
@@ -439,6 +463,9 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .description-plat p {
+    padding: 1rem 3rem;
   }
 
   .photo-plat img {
