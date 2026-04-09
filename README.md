@@ -1,6 +1,6 @@
 # Restaurant "Bon Appétit" - Intégration Web
 
-![Aperçu de l'application CineRadar](./assets/img/image.jpg)
+![Aperçu de l'application](./assets/img/image.jpg)
 
 Ce projet consiste en la création d'un site vitrine moderne et attractif pour le restaurant "Bon Appétit", dirigé par Monsieur Michel Bouillon. L'objectif est de digitaliser l'établissement pour permettre aux clients de découvrir la carte et de réserver en ligne.
 
