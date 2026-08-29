@@ -16,10 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
     <script src="./assets/JS/script.js" defer></script>
     <link rel="icon" href="./assets/img/Logo.png" type="image/x-icon" />
 
@@ -33,37 +29,36 @@
   <body>
     <!-- En-tête du site -->
     <header>
-      <nav class="navbar">
-        <img src="./assets/img/Logo.png" class="img-logo" alt="logo" />
-
-        <div class="nav-links">
-          <ul>
-            <li><a href="#horaires">Les Horaires</a></li>
-            <li><a href="#plat">Nos créations</a></li>
-            <li><a href="#avis">Avis</a></li>
-            <li><a href="#contact">Réserver</a></li>
-          </ul>
-        </div>
-
-        <img
-          src="./assets/img/menu-burger.png"
-          class="menu-hamburger"
-          alt="menu"
-        />
-      </nav>
-
       <img
         src="./assets/img/food_6_dark.jpg"
         alt="Image de plat"
         class="img-header"
       />
     </header>
+    <nav class="navbar">
+      <img src="./assets/img/Logo.svg" class="img-logo" alt="logo" />
+
+      <div class="nav-links">
+        <ul>
+          <li><a href="#horaires">Les Horaires</a></li>
+          <li><a href="#plat">Nos créations</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#contact" class="btn">Réserver</a></li>
+        </ul>
+      </div>
+
+      <button class="menu-hamburger" aria-label="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
     <div class="overlay"></div>
     <!-- Contenu principal -->
     <main>
       <section id="description">
         <h2>Notre chef</h2>
-        <div class="information">
+        <div class="hero">
           <img src="./assets/img/chef_dark.jpg" alt="chef" />
           <div>
             <p>Bienvenue dans mon restaurant Bon Appétit.</p>
@@ -85,23 +80,24 @@
         </div>
       </section>
 
-      <section id="horaires">
+      <section id="horaires"></section>
+      <div class="parallax-section parallax-1">
         <div class="container">
           <div class="text-overlay">
             <p>HEURES D’OUVERTURE</p>
             <p>Du lundi au samedi</p>
             <p>12h30 - 14h30</p>
             <p>19h - 22h</p>
-            <p>Dimanche : Fermé</p>
           </div>
         </div>
-      </section>
+      </div>
 
       <section class="section-plats" id="plat">
         <h2>Nos créations</h2>
-        <article class="plat">
-          <div class="description-plat">
-            <h2>Élégance Marine en Sauce Crémée</h2>
+        <section id="plat1" class="plat-section">
+          <div class="img-wrapper"></div>
+          <div class="wrapper">
+            <h3>Élégance Marine en Sauce Crémée</h3>
             <p>
               un plat raffiné où de succulentes crevettes et un médaillon de
               poisson sont nappés d'une sauce onctueuse et crémeuse. L'ensemble
@@ -109,16 +105,12 @@
               basilic poupre.
             </p>
           </div>
-          <img
-            src="assets/img/food_5_dark.jpg"
-            alt="plat de crevette en sauce "
-            class="photo-plat"
-          />
-        </article>
+        </section>
 
-        <article class="plat">
-          <div class="description-plat">
-            <h2>Délicatesse Printanière</h2>
+        <section id="plat2" class="plat-section">
+          <div class="img-wrapper"></div>
+          <div class="wrapper">
+            <h3>Délicatesse Printanière</h3>
             <p>
               Ces gnocchis sont sublimées par une sauce légère, parsemée
               d'amandes effilées croustillantes et de feuilles de roquette
@@ -126,16 +118,12 @@
               vif et rafraîchissant
             </p>
           </div>
-          <img
-            src="assets/img/food_11_dark.jpg"
-            alt="gnocchis"
-            class="photo-plat"
-          />
-        </article>
+        </section>
 
-        <article class="plat">
-          <div class="description-plat">
-            <h2>Thon Ahi Saisi au Sel de Mer</h2>
+        <section id="plat3" class="plat-section">
+          <div class="img-wrapper"></div>
+          <div class="wrapper">
+            <h3>Thon Ahi Saisi au Sel de Mer</h3>
             <p>
               Une tranche de thon de qualité, parfaitement saisie à l'exterieur
               et crue à l'intérieur, assaisonée d'une généreuse pincée de gros
@@ -143,16 +131,12 @@
               citron vert, et une sauce piquante pour relever le tout.
             </p>
           </div>
-          <img
-            src="assets/img/food_10_dark.jpg"
-            alt="Tranche de thon"
-            class="photo-plat"
-          />
-        </article>
+        </section>
 
-        <article class="plat">
-          <div class="description-plat">
-            <h2>Steak & Oeuf, Cuisine de Caractère</h2>
+        <section id="plat4" class="plat-section">
+          <div class="img-wrapper"></div>
+          <div class="wrapper">
+            <h3>Steak & Oeuf, Cuisine de Caractère</h3>
             <p>
               Un pavé de boeuf grillé et juteux, servi avec un oeuf poché dont
               le jaune coulant vient enrichir la sauce. Accompagné d'une fraîche
@@ -160,12 +144,7 @@
               savoureuse et rustique.
             </p>
           </div>
-          <img
-            src="assets/img/food_7_dark.jpg"
-            alt="steak et oeuf poché "
-            class="photo-plat"
-          />
-        </article>
+        </section>
       </section>
 
       <section id="avis">
@@ -249,81 +228,110 @@
           </li>
         </ul>
       </section>
-
+      <div class="parallax-section parallax-2"></div>
       <!-- Formulaire de réservation -->
-      <h2>Réservez votre table</h2>
-      <section id="contact">
-        <div class="container-form">
-          <form action="#" method="POST" id="formReserv">
-            <div class="form-item">
-              <label for="first-name">Nom</label>
-              <input
-                type="text"
-                id="first-name"
-                placeholder="Ex : Dupont"
-                required
-              />
-            </div>
+      <section class="contact">
+        <div class="information">
+          <h2>RÉSERVATIONS</h2>
+          <h4>Assurez-vous d'avoir votre table</h4>
+          <p>
+            En raison de l'affluence de notre service en soirée et de notre
+            capacité intimiste, nous vous conseillons de réserver au moins 48
+            heures à l'avance.
+          </p>
+          <hr />
+          <p><span>Contact direct :</span> 06 03 46 56 43</p>
+          <p><span>Email :</span> bonappetit@contact.fr</p>
+        </div>
+        <div class="formReserv">
+          <h3>Demande de Réservation</h3>
+          <form action="#" id="contact" method="POST">
+            <div class="formReserv-containt">
+              <div class="form-item">
+                <label for="first-name">Nom</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  placeholder="Ex : Dupont"
+                  required
+                />
+              </div>
 
-            <div class="form-item">
-              <label for="last-name">Prénom</label>
-              <input
-                type="text"
-                id="last-name"
-                placeholder="Ex : Jacque"
-                required
-              />
-            </div>
+              <div class="form-item">
+                <label for="last-name">Prénom</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  placeholder="Ex : Jacque"
+                  required
+                />
+              </div>
 
-            <div class="form-item">
-              <label for="telephone">Téléphone</label>
-              <input
-                type="tel"
-                id="telephone"
-                placeholder="Ex : 04 56 37 18 32"
-                required
-              />
-            </div>
+              <div class="form-item">
+                <label for="telephone">Téléphone</label>
+                <input
+                  type="tel"
+                  id="telephone"
+                  placeholder="Ex : 04 56 37 18 32"
+                  required
+                />
+              </div>
 
-            <div class="form-item">
-              <label for="horaire">Choisissez un horaire :</label>
-              <select id="horaire" name="horaire" required>
-                <option value="">Sélectionnez un horaire</option>
-                <option value="12:30">12h30</option>
-                <option value="13:00">13h00</option>
-                <option value="13:30">13h30</option>
-                <option value="14:00">14h00</option>
-                <option value="14:30">14h30</option>
-                <option value="19:00">19h00</option>
-                <option value="19:30">19h30</option>
-                <option value="20:00">20h00</option>
-                <option value="20:30">20h30</option>
-                <option value="21:00">21h00</option>
-                <option value="21:30">21h30</option>
-                <option value="22:00">22h00</option>
-              </select>
-            </div>
+              <div class="form-item">
+                <label for="date">Date</label>
+                <input type="date" id="date" required />
+              </div>
 
-            <div class="form-item">
-              <label for="personnes">Nombre de personnes :</label>
-              <select id="personnes" name="personnes" required>
-                <option value="">Choisissez</option>
-                <option value="1">1 personne</option>
-                <option value="2">2 personnes</option>
-                <option value="3">3 personnes</option>
-                <option value="4">4 personnes</option>
-                <option value="5">5 personnes</option>
-                <option value="6">6 personnes (max)</option>
-              </select>
-            </div>
+              <div class="form-item">
+                <label for="horaire">Choisissez un horaire :</label>
+                <select id="horaire" name="horaire" required>
+                  <option value="">Sélectionnez un horaire</option>
+                  <option value="12:30">12h30</option>
+                  <option value="13:00">13h00</option>
+                  <option value="13:30">13h30</option>
+                  <option value="14:00">14h00</option>
+                  <option value="14:30">14h30</option>
+                  <option value="19:00">19h00</option>
+                  <option value="19:30">19h30</option>
+                  <option value="20:00">20h00</option>
+                  <option value="20:30">20h30</option>
+                  <option value="21:00">21h00</option>
+                  <option value="21:30">21h30</option>
+                  <option value="22:00">22h00</option>
+                </select>
+              </div>
 
-            <button type="submit">Réserver</button>
+              <div class="form-item">
+                <label for="personnes">Nombre de convives</label>
+                <select id="personnes" name="personnes" required>
+                  <option value="">Choisissez</option>
+                  <option value="1">1 personne</option>
+                  <option value="2">2 personnes</option>
+                  <option value="3">3 personnes</option>
+                  <option value="4">4 personnes</option>
+                  <option value="5">5 personnes</option>
+                  <option value="6">6 personnes (max)</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn">Réserver</button>
           </form>
         </div>
-      </section>
 
-      <section>
-        <h2>Nous trouver</h2>
+        <div class="information place">
+          <h2>Nous trouvez</h2>
+          <h4>Au coeur d’Amiens</h4>
+          <h5>ADRESSE</h5>
+          <p>
+            Bon Appétit – Restaurant Michel Bouillon 12 Rue de la Gastronomie,
+            80800 Amiens
+          </p>
+          <h5>HORAIRES D’OUVERTURE</h5>
+          <p>
+            Du Mardi au Samedi Déjeuner : 12h00 — 14h30 Dîner : 19h30 — 22h30
+            Fermé le Dimanche et Lundi
+          </p>
+        </div>
         <div class="carte">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86965.55614679729!2d2.1942809252918978!3d49.89109559573687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e7857c0e87f5fb%3A0x37fb21b742d12b66!2sLa%20Manu%20-%20Campus%20Amiens!5e1!3m2!1sfr!2sfr!4v1763547514471!5m2!1sfr!2sfr"
@@ -340,56 +348,53 @@
 
     <!-- Pied de page -->
     <footer class="footer">
-      <div class="footer-links">
-        <div class="footer-column">
-          <h3>Contact</h3>
-          <ul>
-            <li><p>Bon Appetit</p></li>
-            <li><p>Restaurant de Michel Bouillon</p></li>
-            <li><a href="#">12 rue de la Gastronomie, 80090 Amiens</a></li>
-            <li><a href="#">06 03 46 56 43</a></li>
-          </ul>
+      <div class="footer-containt">
+        <div class="resum">
+          <h2>Bon Appétit</h2>
+          <p>
+            Une cuisine d'auteur sincère et gourmande, ancrée au cœur d’Amiens.
+            Produits d'exception et flacons d'émotion sous les dorures de notre
+            maison.
+          </p>
         </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+              <li><p>bonappetit@contact.fr</p></li>
+              <li><p>06 03 46 56 43</p></li>
+              <li>
+                <p>
+                  Bon Appétit – Restaurant Michel Bouillon 12 Rue de la
+                  Gastronomie, 80800 Amiens
+                </p>
+              </li>
+            </ul>
+          </div>
 
-        <div class="footer-column">
-          <h3>Horaire d'ouverture</h3>
-          <ul>
-            <li><p>Du Lundi au Samedi</p></li>
-            <li><p>Midi : 12h30-14h30</p></li>
-            <li><p>Soir : 19h-22h</p></li>
-            <li><p>Dimanche : Fermé</p></li>
-          </ul>
-        </div>
+          <div class="footer-column">
+            <h3>Horaire d'ouverture</h3>
+            <ul>
+              <li><p>Du Lundi au Samedi</p></li>
+              <li><p>Midi : 12h30-14h30</p></li>
+              <li><p>Soir : 19h-22h</p></li>
+            </ul>
+          </div>
 
-        <div class="footer-column">
-          <h3>A propos</h3>
-          <ul>
-            <li><a href="#">Mentions légales</a></li>
-            <li>
-              <a
-                href="https://www.google.com/maps/place/La+Manu+-+Campus+Amiens/@49.8910956,2.1942809,19971m/data=!3m2!1e3!5s0x47e7844a37c68a6d:0x41bd48b9ebd3789!4m10!1m2!2m1!1sla+manu!3m6!1s0x47e7857c0e87f5fb:0x37fb21b742d12b66!8m2!3d49.8911659!4d2.311068!15sCgdsYSBtYW51WgkiB2xhIG1hbnWSAQdjb2xsZWdlqgFLCg0vZy8xMWZwdHl6cjU5EAEqCyIHbGEgbWFudSgEMh4QASIakgty3D5M4ME2Ra8CFa2sdAmUt3KueqTRaB0yCxACIgdsYSBtYW514AEA!16s%2Fg%2F11fptyzr59?entry=ttu&g_ep=EgoyMDI1MTExNi4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
-                >Google Maps</a
-              >
-            </li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Tiktok</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <hr class="ligne-footer" />
-
-      <div class="paiement-bar">
-        <p class="paiement-titre">Moyen de paiement</p>
-        <div class="icone-paiement">
-          <i class="ri-money-euro-box-line"></i>
-          <i class="ri-mastercard-fill"></i>
-          <i class="ri-paypal-fill"></i>
-          <i class="ri-visa-line"></i>
+          <div class="footer-column">
+            <h3>Suivez-nous</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Tiktok</a></li>
+            </ul>
+          </div>
         </div>
       </div>
+
+      <hr />
+
+      <p>© 2025 Bon Appétit Amiens. Tous droits réservés.</p>
     </footer>
   </body>
 </html>
