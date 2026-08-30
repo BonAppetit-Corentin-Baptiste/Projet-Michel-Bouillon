@@ -274,6 +274,7 @@ header .img-header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll; /* mobile par défaut */
   box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.6);
   position: relative;
   display: flex;
@@ -285,14 +286,18 @@ header .img-header {
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
-  background-attachment: fixed;
-  position: relative;
+}
+
+@media (min-width: 768px) {
+  .parallax-section {
+    background-attachment: fixed;
+  }
 }
 .parallax-1 {
-  background-image: url("../img/food_9_dark.jpg");
+  background-image: url("../img/food_9_dark.webp");
 }
 .parallax-2 {
-  background-image: url("../img/testimonal_background_dark.jpg");
+  background-image: url("../img/testimonal_background_dark.webp");
 }
 
 /* plats */
@@ -327,16 +332,16 @@ header .img-header {
 }
 
 #plat1 .img-wrapper {
-  background-image: url("../img/food_5_dark.jpg");
+  background-image: url("../img/food_5_dark.webp");
 }
 #plat2 .img-wrapper {
-  background-image: url("../img/food_11_dark.jpg");
+  background-image: url("../img/food_11_dark.webp");
 }
 #plat3 .img-wrapper {
-  background-image: url("../img/food_10_dark.jpg");
+  background-image: url("../img/food_10_dark.webp");
 }
 #plat4 .img-wrapper {
-  background-image: url("../img/food_7_dark.jpg");
+  background-image: url("../img/food_7_dark.webp");
 }
 
 .description-plat {
@@ -496,12 +501,23 @@ input[type="text"],
 input[type="tel"],
 input[type="date"],
 select {
+  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   padding: 1rem;
-  border: 0.4 solid var(--border);
+  border: 0.4px solid var(--border);
   border-radius: 18px;
   font-size: 1em;
+  background-color: var(--white);
+  color: var(--black);
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+}
+select {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px;
+  padding-right: 40px; /* pour pas que le texte passe sous la flèche */
 }
 form .btn {
   width: 100%;
@@ -670,16 +686,16 @@ footer hr {
   }
 
   #plat1 .img-wrapper {
-    background-image: url("../img/food_5_dark.jpg");
+    background-image: url("../img/food_5_dark.webp");
   }
   #plat2 .img-wrapper {
-    background-image: url("../img/food_11_dark.jpg");
+    background-image: url("../img/food_11_dark.webp");
   }
   #plat3 .img-wrapper {
-    background-image: url("../img/food_10_dark.jpg");
+    background-image: url("../img/food_10_dark.webp");
   }
   #plat4 .img-wrapper {
-    background-image: url("../img/food_7_dark.jpg");
+    background-image: url("../img/food_7_dark.webp");
   }
 
   @media (max-width: 767px) {
