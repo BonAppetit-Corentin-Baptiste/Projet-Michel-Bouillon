@@ -525,7 +525,7 @@ select {
   background-size: 16px;
   padding-right: 40px; /* pour pas que le texte passe sous la flèche */
 }
-form .btn {
+.formReserv .btn {
   width: 100%;
 }
 input:focus,
@@ -601,7 +601,7 @@ footer hr {
   color: var(--beige);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   /* nav */
   .img-logo {
     width: 4%;
@@ -785,7 +785,7 @@ footer hr {
     grid-row: 1;
   }
   .carte {
-    grid-column: 1/3;
+    grid-column: 1/3;x
     grid-row: 2;
   }
   .information.place {
